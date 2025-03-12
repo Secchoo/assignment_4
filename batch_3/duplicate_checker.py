@@ -5,7 +5,7 @@ def prog03():
     print("Enter numbers (invalid input to stop):")
     while True:
         try:
-            num = float(input("Number: "))
+            num = int(input("Number: "))
             status = "Unique" if num not in seen else "Duplicate"
             print(status)
             seen.add(num)
@@ -13,5 +13,5 @@ def prog03():
             print("Done!")
             break
 
-# Example usage
+#result
 prog03()
