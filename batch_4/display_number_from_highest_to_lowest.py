@@ -6,7 +6,7 @@ print("Enter numbers (invalid input to stop):")
 while True:
     try:
         # Try to convert the input to a float and add it to the list
-        num = float(input("Number: "))
+        num = int(input("Number: "))
         numbers.append(num)
     except ValueError:
         # Break the loop if the input is not a valid float
