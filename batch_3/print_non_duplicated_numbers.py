@@ -6,13 +6,16 @@ def prog01():
     for i in range(10):
         while True:
             try:
+                # Prompt the user to enter a number
                 num = int(input(f"Number {i + 1}: "))
+                # Add the number to the list
                 numbers.append(num)
                 break
             except ValueError:
+                # Handle invalid input
                 print("Invalid input. Please enter a valid number.")
     
-    # Count occurrences and display unique numbers
+    #display unique numbers
     seen = {}
     for num in numbers:
         seen[num] = seen.get(num, 0) + 1
