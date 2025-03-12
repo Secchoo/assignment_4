@@ -1,16 +1,14 @@
 #Find the highest number entered.
-highest_num = None
+numbers = []
     
 print("Enter numbers (invalid input to stop):")
 while True:
     try:
-        num = int(input("Number: "))
-        if highest_num is None or num > highest_num:
-            highest_num = num
+        num = float(input("Number: "))
+        numbers.append(num)
     except ValueError:
+        if numbers:
+            print(f"\nHighest number entered: {max(numbers)}")
+        else:
+            print("\nNo valid numbers entered.")
         break
-    
-    if highest_num is not None:
-        print(f"\nHighest number entered: {highest_num}")
-    else:
-        print("\nNo valid numbers entered.")
