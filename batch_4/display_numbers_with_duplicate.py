@@ -17,5 +17,14 @@ count_dict = {}
 for num in numbers:
     count_dict[num] = count_dict.get(num, 0) + 1
     
-
+# Display duplicates
+found_duplicates = False
+print("\nNumbers appearing multiple times:")
+for num in sorted(count_dict.keys()):
+    if count_dict[num] > 1:
+        print(f"{num} appears {count_dict[num]} times")
+        found_duplicates = True
+    
+if not found_duplicates:
+    print("(No duplicates found)")
 
