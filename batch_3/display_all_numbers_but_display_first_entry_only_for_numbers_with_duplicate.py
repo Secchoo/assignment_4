@@ -12,4 +12,13 @@ def prog02():
             except ValueError:
                 print("Invalid input. Please enter a valid number.")
     
-    
+    # Display first occurrence of each number
+    seen = set()
+    print("\nNumbers (showing first entry of duplicates only):")
+    for num in numbers:
+        if num not in seen:
+            print(num)
+            seen.add(num)
+
+#result
+prog02()
