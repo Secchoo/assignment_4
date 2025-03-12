@@ -22,5 +22,5 @@ def prog01():
         if seen[num] == 1:
             print(num)
 
-# Example usage
+#result
 prog01()
