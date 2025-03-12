@@ -1,5 +1,5 @@
 def prog05():
-    """Continuously prompt for numbers until invalid input, sort and display."""
+    #Continuously prompt for numbers until invalid input, sort and display.
     numbers = []
     
     print("Enter numbers (invalid input to stop):")
